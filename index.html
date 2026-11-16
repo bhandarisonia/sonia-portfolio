@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonia Sphere | Soniya Bhandari - Website Developer & Digital Marketing Specialist</title>
+  <meta name="description" content="Portfolio of Soniya Bhandari - Website Developer & Digital Marketing Specialist. Creating modern responsive websites and driving digital growth through SEO, Meta Ads, and social media." />
+  <meta name="keywords" content="Soniya Bhandari, Website Developer, Digital Marketing Specialist, SEO Specialist, React Developer, Frontend Developer, Meta Ads, UPES Dehradun" />
+  <meta name="author" content="Soniya Bhandari" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Shining Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Top Reading Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Ambient Interactive Particle Canvas -->
+  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Background Animated Mesh Glow -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-blob blob-1"></div>
+    <div class="mesh-blob blob-2"></div>
+    <div class="mesh-blob blob-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" title="Sonia Sphere">
+        <div class="sphere-logo-wrap">
+          <div class="shining-sphere">
+            <div class="sphere-highlight"></div>
+            <div class="sphere-orbit"></div>
+          </div>
+        </div>
+        <span class="brand-text">Sonia <span class="shining-sphere-text">Sphere</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Nav Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Items & Theme Switcher -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm d-none-sm">Hire Me</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Content -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for Freelance & Opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="text-gradient">Soniya Bhandari</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span class="hero-role-prefix">&lt;</span>
+              <span class="hero-typed-text" id="typedText">Website Developer</span>
+              <span class="hero-role-prefix">/&gt;</span>
+            </div>
+
+            <p class="hero-tagline">
+              I Build Websites. I Grow Brands. I Create Digital Experiences.
+            </p>
+
+            <p class="hero-description">
+              Passionate about engineering modern, responsive, and user-centric websites. I merge creative design with strategic digital marketing—driving measurable organic reach, targeted Meta Ads, and impactful brand growth.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Work</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Let's Work Together</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </a>
+            </div>
+
+            <!-- Social Links Quick Bar -->
+            <div class="hero-social-links">
+              <a href="https://linkedin.com/in/soniyabhandari-488a45283" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/soni841" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="mailto:soniyabhandari.dev@gmail.com" class="social-pill" title="Direct Email">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Visual / Photo Frame -->
+          <div class="hero-photo-wrapper">
+            <div class="photo-glow-ring"></div>
+            
+            <!-- Floating experience badges -->
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon code">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <div class="badge-text-num">Web Dev</div>
+                <div class="badge-text-label">Responsive & Fast</div>
+              </div>
+            </div>
+
+            <div class="photo-frame">
+              <div class="photo-inner">
+                <img src="soniaphoto.jpeg" alt="Soniya Bhandari - Website Developer & Digital Marketing Specialist" />
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon growth">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div>
+                <div class="badge-text-num">Growth & SEO</div>
+                <div class="badge-text-label">Meta & Google Ads</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Stats Counter Strip -->
+        <div class="stats-strip" id="statsStrip">
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="5">0</span>+</div>
+            <div class="stat-label">Production Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">MCA</div>
+            <div class="stat-label">AI & Machine Learning</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">360°</div>
+            <div class="stat-label">Web Dev & Digital Growth</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="100">0</span>%</div>
+            <div class="stat-label">Client Commitment</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME & EDUCATION SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">Bridging technical computer applications with high-impact marketing acumen.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative -->
+          <div class="glass-card about-card">
+            <h3 class="about-text-lead">
+              Transforming ambitious ideas into functional, aesthetically captivating, and responsive digital platforms.
+            </h3>
+            
+            <p class="about-paragraph">
+              I'm a website developer with a rich background in Computer Applications and Artificial Intelligence & Machine Learning. I specialize in building user-friendly web solutions that look elegant and perform flawlessly across all devices.
+            </p>
+
+            <p class="about-paragraph">
+              Alongside core web development, I bring hands-on expertise in digital marketing strategies, search engine optimization (SEO), social media brand curation, and high-ROI paid advertising campaigns. I believe every business deserves a memorable digital identity that drives conversions.
+            </p>
+
+            <ul class="highlights-list">
+              <li class="highlight-item">
+                <span class="highlight-bullet"><i class="fa-solid fa-check"></i></span>
+                <span>Crafting responsive, clean, and scalable web architectures</span>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-bullet"><i class="fa-solid fa-check"></i></span>
+                <span>Driving measurable ROI through targeted Meta & Google Ads</span>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-bullet"><i class="fa-solid fa-check"></i></span>
+                <span>Continuous research and application in Artificial Intelligence & ML</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Education Timeline Card -->
+          <div class="glass-card about-card">
+            <h3 class="about-text-lead" style="margin-bottom: 25px;">
+              <i class="fa-solid fa-graduation-cap text-gradient" style="margin-right: 8px;"></i> Academic Background
+            </h3>
+
+            <div class="education-wrapper">
+              <!-- Degree 1 -->
+              <div class="edu-timeline-item">
+                <div class="edu-node"><div class="edu-node-inner"></div></div>
+                <span class="edu-period">2023 – 2025</span>
+                <h4 class="edu-degree">MCA – Artificial Intelligence & Machine Learning</h4>
+                <div class="edu-school"><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> UPES Dehradun</div>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">
+                  Focused on software development paradigms, AI algorithms, predictive modeling, machine learning, and advanced cloud technologies.
+                </p>
+              </div>
+
+              <!-- Degree 2 -->
+              <div class="edu-timeline-item">
+                <div class="edu-node"><div class="edu-node-inner"></div></div>
+                <span class="edu-period">2019 – 2022</span>
+                <h4 class="edu-degree">B.Sc. – Bachelor of Science</h4>
+                <div class="edu-school"><i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> HNB Garhwal University</div>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">
+                  Built a rigorous analytical and mathematical foundation, scientific problem-solving, and computational principles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section" id="services">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">What I Deliver</span>
+          <h2 class="section-title">My <span class="text-gradient">Services</span></h2>
+          <p class="section-subtitle">Tailored end-to-end digital services designed to turn visitors into lifelong customers.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Website Development -->
+          <div class="glass-card service-card">
+            <div class="service-header">
+              <div class="service-icon-box icon-blue">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <span class="service-num">Service 01</span>
+                <h3 class="service-title">Website Development</h3>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+              Custom website architecture optimized for blazing speed, mobile responsiveness, and intuitive user experiences.
+            </p>
+            <ul class="service-list">
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Business Website Development</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Modern Portfolio Websites</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> High-Converting Landing Pages</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> E-commerce Websites</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Website Redesign & Modernization</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Ongoing Maintenance & Security</li>
+            </ul>
+            <div class="service-card-action">
+              <a href="#contact" class="service-link">
+                <span>Request Web Project</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2: Digital Marketing -->
+          <div class="glass-card service-card">
+            <div class="service-header">
+              <div class="service-icon-box icon-cyan">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <div>
+                <span class="service-num">Service 02</span>
+                <h3 class="service-title">Digital Marketing</h3>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+              Data-backed paid advertising campaigns that reach your ideal customers and maximize your marketing return on ad spend.
+            </p>
+            <ul class="service-list">
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Meta (Facebook & Instagram) Ads</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Google Search & Display Ads</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Targeted Lead Generation Campaigns</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Digital Marketing Growth Strategy</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Campaign Optimization & A/B Testing</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Funnel & Conversion Tracking</li>
+            </ul>
+            <div class="service-card-action">
+              <a href="#contact" class="service-link">
+                <span>Start Ads Campaign</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3: SEO Optimization -->
+          <div class="glass-card service-card">
+            <div class="service-header">
+              <div class="service-icon-box icon-purple">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <div>
+                <span class="service-num">Service 03</span>
+                <h3 class="service-title">SEO Optimization</h3>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+              Dominating search engine results with comprehensive technical optimization and sustainable organic traffic tactics.
+            </p>
+            <ul class="service-list">
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Comprehensive On-Page SEO</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Authority Off-Page SEO</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Technical SEO & Core Web Vitals</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> In-Depth Keyword Research</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> High-Quality Backlink Building</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Complete Website Speed & Audit</li>
+            </ul>
+            <div class="service-card-action">
+              <a href="#contact" class="service-link">
+                <span>Boost Google Ranking</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4: Social Media Management -->
+          <div class="glass-card service-card">
+            <div class="service-header">
+              <div class="service-icon-box icon-pink">
+                <i class="fa-solid fa-share-nodes"></i>
+              </div>
+              <div>
+                <span class="service-num">Service 04</span>
+                <h3 class="service-title">Social Media Management</h3>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">
+              Building an authentic, active, and aesthetically consistent brand community that drives engagement and brand trust.
+            </p>
+            <ul class="service-list">
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Instagram & Facebook Channel Management</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Eye-Catching Social Media Post Design</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Content Planning & Editorial Calendars</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Brand Identity Promotion</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Audience Engagement & Community Care</li>
+              <li class="service-item"><i class="fa-solid fa-circle-check"></i> Performance Insights & Analytics</li>
+            </ul>
+            <div class="service-card-action">
+              <a href="#contact" class="service-link">
+                <span>Elevate Your Brand</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">My Toolkit</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">A balanced fusion of front-end engineering, backend integration, and growth tools.</p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Filter Navigation -->
+          <div class="skills-filter-nav">
+            <button class="filter-btn skill-filter-btn active" data-cat="all">All Skills</button>
+            <button class="filter-btn skill-filter-btn" data-cat="frontend">Frontend</button>
+            <button class="filter-btn skill-filter-btn" data-cat="backend">Backend & DB</button>
+            <button class="filter-btn skill-filter-btn" data-cat="cms">CMS & Tools</button>
+            <button class="filter-btn skill-filter-btn" data-cat="marketing">Digital Marketing</button>
+            <button class="filter-btn skill-filter-btn" data-cat="other">Other Skills</button>
+          </div>
+
+          <!-- Skills Cards Groups -->
+          <div class="skills-groups-wrapper">
+            
+            <!-- Category 1: Frontend Development -->
+            <div class="glass-card skill-category-card" data-cat="frontend">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fa-brands fa-react"></i></div>
+                <h3 class="skill-cat-title">Frontend Development</h3>
+              </div>
+              <div class="skill-tags-grid">
+                <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fa-brands fa-react"></i> React.js</span>
+                <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill-tag"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+              </div>
+            </div>
+
+            <!-- Category 2: Backend & Database -->
+            <div class="glass-card skill-category-card" data-cat="backend">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fa-solid fa-server"></i></div>
+                <h3 class="skill-cat-title">Backend & Database</h3>
+              </div>
+              <div class="skill-tags-grid">
+                <span class="skill-tag"><i class="fa-brands fa-node"></i> Node.js</span>
+                <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Express.js</span>
+                <span class="skill-tag"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+              </div>
+            </div>
+
+            <!-- Category 3: CMS & Website Tools -->
+            <div class="glass-card skill-category-card" data-cat="cms">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fa-brands fa-wordpress"></i></div>
+                <h3 class="skill-cat-title">CMS & Website Tools</h3>
+              </div>
+              <div class="skill-tags-grid">
+                <span class="skill-tag"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+                <span class="skill-tag"><i class="fa-solid fa-cubes"></i> Elementor</span>
+                <span class="skill-tag"><i class="fa-solid fa-sliders"></i> CMS Customization</span>
+              </div>
+            </div>
+
+            <!-- Category 4: Digital Marketing Tools -->
+            <div class="glass-card skill-category-card" data-cat="marketing">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3 class="skill-cat-title">Digital Marketing Tools</h3>
+              </div>
+              <div class="skill-tags-grid">
+                <span class="skill-tag"><i class="fa-brands fa-meta"></i> Meta Ads Manager</span>
+                <span class="skill-tag"><i class="fa-brands fa-google"></i> Google Ads</span>
+                <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Google Analytics</span>
+                <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> Google Search Console</span>
+                <span class="skill-tag"><i class="fa-solid fa-arrow-trend-up"></i> SEO Tools</span>
+              </div>
+            </div>
+
+            <!-- Category 5: Other Core Skills -->
+            <div class="glass-card skill-category-card" data-cat="other">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fa-solid fa-toolbox"></i></div>
+                <h3 class="skill-cat-title">Other Skills</h3>
+              </div>
+              <div class="skill-tags-grid">
+                <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                <span class="skill-tag"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design</span>
+                <span class="skill-tag"><i class="fa-solid fa-link"></i> API Integration</span>
+                <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva Graphic Design</span>
+              </div>
+            </div>
+
+            <!-- Category 6: AI & Machine Learning Specialization -->
+            <div class="glass-card skill-category-card" data-cat="backend">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3 class="skill-cat-title">AI & Intelligence</h3>
+              </div>
+              <div class="skill-tags-grid">
+                <span class="skill-tag"><i class="fa-solid fa-robot"></i> Machine Learning</span>
+                <span class="skill-tag"><i class="fa-solid fa-microchip"></i> AI Foundations</span>
+                <span class="skill-tag"><i class="fa-brands fa-python"></i> Python Basics</span>
+                <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Predictive Analytics</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">Real-World Work</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">Real client websites engineered with focus on design, speed, and conversion results.</p>
+        </div>
+
+        <!-- Filter tabs for projects -->
+        <div class="projects-header-actions">
+          <button class="filter-btn project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn project-filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn project-filter-btn" data-filter="marketing">SEO & Marketing</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Crossover Fintech Support -->
+          <div class="glass-card project-card" data-category="web">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Fintech & Business</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                </div>
+                <div class="mockup-body">
+                  <i class="fa-solid fa-building-columns mockup-icon"></i>
+                  <span class="mockup-title">Crossover Fintech Support</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Crossover Fintech Support</h3>
+              <div class="project-tagline">Business Website Development</div>
+              <p class="project-desc">
+                Developed and engineered a professional, secure business website tailored for financial and technology services.
+              </p>
+              <ul class="project-features">
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Responsive multi-device layout</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Structured financial service showcase</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Seamless user-friendly navigation</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Lead generation-focused CTAs</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://www.crossoverfintechsupport.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>Visit Live Site</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Suraksha Life Care -->
+          <div class="glass-card project-card" data-category="web">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Healthcare</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                </div>
+                <div class="mockup-body">
+                  <i class="fa-solid fa-heart-pulse mockup-icon"></i>
+                  <span class="mockup-title">Suraksha Life Care</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Suraksha Life Care</h3>
+              <div class="project-tagline">Healthcare Service Website</div>
+              <p class="project-desc">
+                A caring, responsive healthcare platform designed to present specialized home-care services, patient support, and streamlined service exploration.
+              </p>
+              <ul class="project-features">
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Clean, compassionate healthcare UI</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Clear service breakdown & packages</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Quick contact & appointment request</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Accessible & mobile-friendly experience</li>
+              </ul>
+              <div class="project-footer">
+                <span class="project-private-label">
+                  <i class="fa-solid fa-briefcase"></i> Client Healthcare Project
+                </span>
+                <a href="#contact" class="project-link-btn">
+                  <span>Inquire Details</span>
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: EPFO Helpline -->
+          <div class="glass-card project-card" data-category="web marketing">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Live Web & SEO</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                </div>
+                <div class="mockup-body">
+                  <i class="fa-solid fa-landmark mockup-icon"></i>
+                  <span class="mockup-title">EPFO Helpline</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">EPFO Helpline</h3>
+              <div class="project-tagline">Informational Web Portal & SEO</div>
+              <p class="project-desc">
+                Developed an informational website related to EPFO services, structured for seamless navigation, accessibility, and high search performance.
+              </p>
+              <ul class="project-features">
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Developed an informational website related to EPFO services</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Created responsive pages with user-friendly navigation</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Organized website content for better accessibility</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Implemented SEO-friendly website structure</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://epfohelpline.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span>Visit Live Site</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: JDV Travels -->
+          <div class="glass-card project-card" data-category="web marketing">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Travel & Hospitality</span>
+              <div class="project-preview-mockup">
+                <div class="mockup-header">
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                  <span class="mock-dot"></span>
+                </div>
+                <div class="mockup-body">
+                  <i class="fa-solid fa-plane-departure mockup-icon"></i>
+                  <span class="mockup-title">JDV Travels</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">JDV Travels</h3>
+              <div class="project-tagline">Travel Website & Digital Marketing</div>
+              <p class="project-desc">
+                Formulated engaging digital solutions, responsive booking pages, and marketing promotional campaigns for bespoke travel & hotel reservation packages.
+              </p>
+              <ul class="project-features">
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Dynamic tour package presentation</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Promotional campaigns & marketing concepts</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> Direct booking inquiry triggers</li>
+                <li class="project-feature-item"><i class="fa-solid fa-check"></i> High-conversion visual aesthetics</li>
+              </ul>
+              <div class="project-footer">
+                <span class="project-private-label">
+                  <i class="fa-solid fa-briefcase"></i> Travel & Tourism Client
+                </span>
+                <a href="#contact" class="project-link-btn">
+                  <span>Inquire Details</span>
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORK PROCESS SECTION -->
+    <section class="section" id="process">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">How I Work</span>
+          <h2 class="section-title">My Work <span class="text-gradient">Process</span></h2>
+          <p class="section-subtitle">A structured 5-step methodology that ensures seamless delivery and measurable growth.</p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Step 1 -->
+          <div class="glass-card process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-title">Understand</h3>
+            <p class="process-desc">
+              Thoroughly understand the client's business model, target audience, core goals, and project requirements.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="glass-card process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-title">Plan</h3>
+            <p class="process-desc">
+              Prepare the complete website wireframe architecture, tech stack selection, and digital marketing strategy.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="glass-card process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-title">Design & Develop</h3>
+            <p class="process-desc">
+              Create an attractive, pixel-perfect, fully responsive, and robustly coded functional website.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="glass-card process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-title">Launch</h3>
+            <p class="process-desc">
+              Perform rigorous cross-browser testing, device optimization, speed audits, and official live deployment.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="glass-card process-card">
+            <div class="process-step-num">05</div>
+            <h3 class="process-title">Grow</h3>
+            <p class="process-desc">
+              Continuous business growth through proactive SEO ranking, Meta & Google Ads, and social media engagement.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME SECTION -->
+    <section class="section" id="why-me">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">The Advantage</span>
+          <h2 class="section-title">Why Work <span class="text-gradient">With Me?</span></h2>
+          <p class="section-subtitle">Delivering technical precision with real business and marketing intelligence.</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Item 1 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="why-title">Creative & Practical Approach</h3>
+            <p class="why-desc">
+              I balance aesthetic visual appeal with practical, high-converting functionality that delivers tangible real-world business results.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3 class="why-title">Responsive & Modern Designs</h3>
+            <p class="why-desc">
+              Websites look pristine on every screen size—from smartphones to large desktop displays—with fast load speeds.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+            <h3 class="why-title">Focus on User Experience</h3>
+            <p class="why-desc">
+              Every button, navigation flow, and content block is thoughtfully placed to eliminate friction and maximize user delight.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="why-title">Web Dev & Digital Marketing Synergy</h3>
+            <p class="why-desc">
+              Unlike traditional coders who ignore marketing, or marketers who can't code, I bring deep dual expertise under one roof.
+            </p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="why-title">Clear & Prompt Communication</h3>
+            <p class="why-desc">
+              Transparent project updates, realistic timelines, and active collaboration at every single phase of our partnership.
+            </p>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="glass-card why-card">
+            <div class="why-icon-box">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="why-title">Continuous Learning & Growth</h3>
+            <p class="why-desc">
+              Currently pursuing MCA in Artificial Intelligence & ML, continually expanding technical boundaries and modern tools.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT / LET'S CONNECT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect!</span></h2>
+          <p class="section-subtitle">Have a project in mind? Need a website for your business or want to grow your brand online?</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left Info -->
+          <div class="glass-card contact-info-card">
+            <h3 class="contact-info-title">Let's build something <span class="text-gradient">amazing together!</span></h3>
+            <p class="contact-info-desc">
+              I'd love to hear about your ideas and help turn them into reality. Whether you need a fresh brand website, an SEO overhaul, or targeted advertising campaigns, feel free to reach out anytime!
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Email -->
+              <a href="mailto:soniyabhandari.dev@gmail.com" class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">Email Me</div>
+                  <div class="contact-item-val">soniyabhandari.dev@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/soniyabhandari-488a45283" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">LinkedIn</div>
+                  <div class="contact-item-val">linkedin.com/in/soniyabhandari-488a45283</div>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/soni841" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">GitHub</div>
+                  <div class="contact-item-val">github.com/soni841</div>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">Location</div>
+                  <div class="contact-item-val">India (Remote Worldwide)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="status-callout">
+              <i class="fa-solid fa-briefcase"></i>
+              <div class="status-callout-text">
+                Available for Freelance Projects & Professional Opportunities.
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right Form -->
+          <div class="glass-card contact-form-card">
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="senderName">Your Full Name *</label>
+                <input type="text" id="senderName" class="form-control" placeholder="e.g. Rahul Sharma" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderEmail">Email Address *</label>
+                <input type="email" id="senderEmail" class="form-control" placeholder="e.g. rahul@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderSubject">Project Type / Subject</label>
+                <input type="text" id="senderSubject" class="form-control" placeholder="e.g. Business Website & SEO Campaign" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderMessage">Project Details / Message *</label>
+                <textarea id="senderMessage" class="form-control" placeholder="Tell me about your goals, timeline, and requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Send Message Now</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-alert" id="toastAlert" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMessage">Your message has been sent successfully!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" title="Scroll to Top" aria-label="Scroll to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <a href="#hero" class="brand-logo" title="Sonia Sphere">
+          <div class="sphere-logo-wrap">
+            <div class="shining-sphere">
+              <div class="sphere-highlight"></div>
+              <div class="sphere-orbit"></div>
+            </div>
+          </div>
+          <span class="brand-text">Sonia <span class="shining-sphere-text">Sphere</span></span>
+        </a>
+
+        <ul class="footer-nav">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#process" class="footer-link">Process</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+
+        <div style="display: flex; gap: 12px;">
+          <a href="https://linkedin.com/in/soniyabhandari-488a45283" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/soni841" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:soniyabhandari.dev@gmail.com" class="social-pill" title="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Soniya Bhandari. All rights reserved. Crafted with clean code and high performance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Logic Script -->
+  <script src="script.js"></script>
+</body>
+</html>
